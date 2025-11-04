@@ -10,7 +10,7 @@
           <div class="w-fit flex items-center gap-[8px]">
             <div class="size-[48px] overflow-clip flex items-center justify-center">
               <div class="size-[50px]">
-                <img class="size-full object-cover" src="../assets/svgs/Logo.svg" alt="Logo" />
+                <img class="size-full object-cover" src="../assets/svgs/logo.svg" alt="Logo" />
               </div>
             </div>
             <!-- <p class="uppercase font-extrabold tracking-tighter text-[12px]">
