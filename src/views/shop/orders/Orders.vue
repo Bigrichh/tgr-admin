@@ -7,7 +7,7 @@
             </h1>
             <!-- Mobile Nav Hamburger toggle -->
             <div @click="contentStore.handleShowNav()" class="block lg:hidden w-[28px] h-[22px]">
-                <img src="../../assets/svgs/navbar/hamburger-menu.svg" alt="nav-menu-icon" />
+                <img src="../../../assets/svgs/navbar/hamburger-menu.svg" alt="nav-menu-icon" />
             </div>
         </div>
 
