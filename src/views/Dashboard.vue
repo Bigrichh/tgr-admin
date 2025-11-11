@@ -301,7 +301,7 @@
                 <td class="!px-[16px] !py-[10px]">GHS {{ order.totalCost }}</td>
                 <td class="!px-[16px] !py-[10px]">
                   {{
-                    order.orderedAt.toDate().toLocaleDateString('en-GB', {
+                    new Date(order.orderedAt).toLocaleDateString('en-GB', {
                       day: '2-digit',
                       month: 'short',
                       year: 'numeric',
@@ -474,9 +474,7 @@ export default {
             : new Date(order.orderedAt)
 
           return (
-            orderDate.getDate() === now.getDate() &&
-            orderDate.getMonth() === now.getMonth() &&
-            orderDate.getFullYear() === now.getFullYear()
+            orderDate.getMonth() === now.getMonth() && orderDate.getFullYear() === now.getFullYear()
           )
         })
         .reduce((total, order) => total + (order.totalCost || 0), 0)
